@@ -14,7 +14,6 @@ public class main {
         cola.encolar(cliente5.getPrioridad(),cliente5);
         ClienteBanco cliente6= new ClienteBanco(1, 23000000, "Cristiano Ronaldo");
         cola.encolar(cliente6.getPrioridad(),cliente6);
-        
         System.out.println(cola);
         System.out.println();
         ClienteBanco atender=cola.desEncolar();
