@@ -71,10 +71,15 @@ public class Laberinto {
         inicio[3]=-1;
 
         pila.push(inicio);
-
+        int iteraciones=0;
         while (!pila.isEmpty()) { 
-
+            iteraciones++;
+            if (iteraciones==botones.getColSize()*botones.getRowSize()){
+                JOptionPane.showMessageDialog(frame,"BUCLE ENCONTRADO","BUCLE ENCONTRADO",JOptionPane.INFORMATION_MESSAGE);
+                break;
+            }
             int[] actual;
+            
             int cantidadC=0;
             actual=pila.peek();
             System.out.println(actual[0]);
